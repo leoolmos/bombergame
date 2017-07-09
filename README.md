@@ -1,8 +1,11 @@
 #Bomber Game
 
 ## Requirements
+
 npm: v3.10.10
+
 node: v6.11.0
+
 gulp: CLI version 3.9.1
 
 ## Installation
