@@ -1,0 +1,47 @@
+<section class="profile vertical-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <div class="user text-center">
+          <img src="http://graph.facebook.com/v2.9/{{vm.user.facebook_id}}/picture?type=large" alt="" class="user__image">
+          <h1 class="user__title">{{vm.user.name}}</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="profile__title">Your Mercs</h2>
+        <div class="row">
+          <ul class="card merc">
+            <li ng-repeat="merc in [] | range:4" class="col-xs-6 col-sm-3">
+              <div class="merc__item card__item card__item--active" ng-show="vm.mercs[merc]">
+                <div class="merc__remove" ng-click="vm.removeMerc(vm.mercs[merc].facebook_id)">X</div>
+                <div class="card__image" ng-style="{'background-image':'url(' + vm.mercs[merc].picture + ')'}"></div>
+                <h3 class="card__title">{{vm.mercs[merc].name}}</h3>
+              </div>
+              <div class="merc__free" ng-class="{'merc__free--youtube': vm.isSlotLocked(merc)}" ng-show="!vm.mercs[merc]">
+                <small ng-show="vm.isSlotLocked(merc)"  ng-click="vm.connectYoutube()">Subscribe to our youtube channel now to get another slot</small>
+                <small ng-show="!vm.isSlotLocked(merc)">Select a friend</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="profile__title">Select your friends as mercs</h2>
+        <div class="row">
+          <ul class="card">
+            <li ng-repeat="friend in vm.friends" data-name="{{friend.name}}" ng-click="vm.selectMerc(friend.facebook_id)" class="col-xs-6 col-sm-2">
+              <div class="card__item">
+                <div class="card__image" ng-style="{'background-image':'url(' + friend.picture + ')'}"></div>
+                <h3 class="card__title">{{friend.name}}</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

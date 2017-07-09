@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="splashDamage">
+<head>
+  <meta charset="UTF-8">
+  <title>Bomber Game</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/libs.css">
+  <link rel="stylesheet" href="/assets/css/compiled.css">
+</head>
+<body ng-controller="baseController as ctrl">
+  <div id="fb-root"></div>
+  <div ui-view=""></div>
+  <div class="loading vertical-center" ng-class="{'loading--hide': !ctrl.isLoading()}">
+    <img src="/assets/img/loading.gif" alt="">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+  <script src="/assets/js/libs.js"></script>
+  <script src="/assets/js/compiled.js"></script>
+</body>
+</html>
