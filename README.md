@@ -27,6 +27,10 @@ npm start;
 http://localhost:3000/
 ```
 
+## How to
+- In order to see your friends in the list, they also need to log into the application to create a gamer profile.
+
+
 ## Author
 Luis Castro
 leonardodesantos@gmail.com
