@@ -8,7 +8,12 @@ node: v6.11.0
 
 gulp: CLI version 3.9.1
 
+mongodb: v3.4.2
+
 ## Installation
+
+Create "bomber database in mongodb;
+
 ```gherkin
 npm install;
 cd app;
