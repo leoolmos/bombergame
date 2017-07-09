@@ -15,7 +15,7 @@ cd app;
 bower install;
 gulp;
 cd ..
-npm run auto-start;
+npm start;
 ```
 ## View in browser
 ```gherkin
