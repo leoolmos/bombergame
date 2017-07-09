@@ -10,9 +10,18 @@ gulp: CLI version 3.9.1
 
 mongodb: v3.4.2
 
+## Mongodb
+Create "bomber" database in mongodb;
+
+```gherkin
+mongo;
+use bomber;
+exit;
+```
+
 ## Installation
 
-Create "bomber" database in mongodb;
+Go to app folder:
 
 ```gherkin
 npm install;
