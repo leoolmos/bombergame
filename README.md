@@ -12,7 +12,7 @@ mongodb: v3.4.2
 
 ## Installation
 
-Create "bomber database in mongodb;
+Create "bomber" database in mongodb;
 
 ```gherkin
 npm install;
