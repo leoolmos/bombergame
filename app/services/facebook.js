@@ -24,7 +24,7 @@ export default function($q, $rootScope) {
     let deferred = $q.defer();
 
     FB.init({
-      appId: '326557414449035',
+      appId: '1577840802235714',
       status: true,
       cookie: true,
       xfbml: true,
