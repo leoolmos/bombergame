@@ -6,6 +6,7 @@
     "lint": "eslint app.js",
     "start": "babel-node ./bin/www",
     "auto-start": "nodemon --exec \"npm run lint && npm start\" --ignore public/js",
+    "preinstall": "npm rebuild node-sass",
     "postinstall": "cd app; ../node_modules/bower/bin/bower install; node ../node_modules/gulp/bin/gulp"
   },
   "dependencies": {
