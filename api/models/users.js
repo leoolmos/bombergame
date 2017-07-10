@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://localhost/bomber');
+mongoose.connect('mongodb://leoolmos:galicia@ds153682.mlab.com:53682/bomber');
 
 let Schema = mongoose.Schema;
 
