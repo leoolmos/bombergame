@@ -2,7 +2,7 @@ import Routes from './routes';
 import RangeService from './filters/range';
 import BomberService from './services/bomber';
 import FacebookService from './services/facebook';
-import AuthMiddleware from './services/authMiddleware';
+import AuthMiddleware from './services/authmiddleware';
 import Youtube from './services/youtube';
 import LoadingStateService from './services/loadingStateService';
 import BaseController from './controllers/base';
